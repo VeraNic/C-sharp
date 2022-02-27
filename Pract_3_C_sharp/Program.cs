@@ -8,7 +8,7 @@
 
         Console.Write("Введите номер дня недели: ");
         int n = Convert.ToInt32(Console.ReadLine());
-
+    
         switch (n)
         {
             case 1:

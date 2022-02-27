@@ -9,7 +9,7 @@
         Console.Write("Введите первое число: ");
         double num1 = Convert.ToDouble(Console.ReadLine());
 
-        Console.Write("Введите первое число: ");
+        Console.Write("Введите второе число: ");
         double num2 = Convert.ToDouble(Console.ReadLine());
 
         if (num1 == num2 * num2)

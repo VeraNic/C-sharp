@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GB\\C#\\HomeWork\\Pract_3.1_C_sharp\\Pract_3.1_C_sharp.csproj": {}
+    "D:\\GB\\C#\\HomeWork\\Pract_3_C_sharp\\Pract_3.1_C_sharp.csproj": {}
   },
   "projects": {
-    "D:\\GB\\C#\\HomeWork\\Pract_3.1_C_sharp\\Pract_3.1_C_sharp.csproj": {
+    "D:\\GB\\C#\\HomeWork\\Pract_3_C_sharp\\Pract_3.1_C_sharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GB\\C#\\HomeWork\\Pract_3.1_C_sharp\\Pract_3.1_C_sharp.csproj",
+        "projectUniqueName": "D:\\GB\\C#\\HomeWork\\Pract_3_C_sharp\\Pract_3.1_C_sharp.csproj",
         "projectName": "Pract_3.1_C_sharp",
-        "projectPath": "D:\\GB\\C#\\HomeWork\\Pract_3.1_C_sharp\\Pract_3.1_C_sharp.csproj",
+        "projectPath": "D:\\GB\\C#\\HomeWork\\Pract_3_C_sharp\\Pract_3.1_C_sharp.csproj",
         "packagesPath": "C:\\Users\\V\\.nuget\\packages\\",
-        "outputPath": "D:\\GB\\C#\\HomeWork\\Pract_3.1_C_sharp\\obj\\",
+        "outputPath": "D:\\GB\\C#\\HomeWork\\Pract_3_C_sharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\V\\AppData\\Roaming\\NuGet\\NuGet.Config",

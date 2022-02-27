@@ -7,7 +7,7 @@
         Console.WriteLine("___________________________");
 
         Console.Write("Введите номер дня недели: ");
-        double n = Convert.ToDouble(Console.ReadLine());
+        int n = Convert.ToInt32(Console.ReadLine());
 
         switch (n)
         {

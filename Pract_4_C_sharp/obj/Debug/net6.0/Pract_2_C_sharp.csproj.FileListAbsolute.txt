@@ -1,0 +1,15 @@
+D:\GB\C#\HomeWork\Pract_2_C_sharp\obj\Debug\net6.0\Pract_2_C_sharp.csproj.AssemblyReference.cache
+D:\GB\C#\HomeWork\Pract_2_C_sharp\obj\Debug\net6.0\Pract_2_C_sharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\GB\C#\HomeWork\Pract_2_C_sharp\obj\Debug\net6.0\Pract_2_C_sharp.AssemblyInfoInputs.cache
+D:\GB\C#\HomeWork\Pract_2_C_sharp\obj\Debug\net6.0\Pract_2_C_sharp.AssemblyInfo.cs
+D:\GB\C#\HomeWork\Pract_2_C_sharp\obj\Debug\net6.0\Pract_2_C_sharp.csproj.CoreCompileInputs.cache
+D:\GB\C#\HomeWork\Pract_2_C_sharp\bin\Debug\net6.0\Pract_2_C_sharp.exe
+D:\GB\C#\HomeWork\Pract_2_C_sharp\bin\Debug\net6.0\Pract_2_C_sharp.deps.json
+D:\GB\C#\HomeWork\Pract_2_C_sharp\bin\Debug\net6.0\Pract_2_C_sharp.runtimeconfig.json
+D:\GB\C#\HomeWork\Pract_2_C_sharp\bin\Debug\net6.0\Pract_2_C_sharp.dll
+D:\GB\C#\HomeWork\Pract_2_C_sharp\bin\Debug\net6.0\Pract_2_C_sharp.pdb
+D:\GB\C#\HomeWork\Pract_2_C_sharp\obj\Debug\net6.0\Pract_2_C_sharp.dll
+D:\GB\C#\HomeWork\Pract_2_C_sharp\obj\Debug\net6.0\refint\Pract_2_C_sharp.dll
+D:\GB\C#\HomeWork\Pract_2_C_sharp\obj\Debug\net6.0\Pract_2_C_sharp.pdb
+D:\GB\C#\HomeWork\Pract_2_C_sharp\obj\Debug\net6.0\Pract_2_C_sharp.genruntimeconfig.cache
+D:\GB\C#\HomeWork\Pract_2_C_sharp\obj\Debug\net6.0\ref\Pract_2_C_sharp.dll

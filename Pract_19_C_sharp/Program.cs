@@ -1,0 +1,15 @@
+﻿Console.WriteLine("");
+Console.WriteLine("________________________________________________________");
+Console.WriteLine("19. Определить номер четверти плоскости, в которой находится точка с координатами Х и У, причем X <> 0 и Y <> 0");
+Console.WriteLine("________________________________________________________");
+Console.WriteLine("");
+Console.Write("Введите абсциссу Х: ");
+int x = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите ординату Y: ");
+int y = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("");
+if (x > 0 && y > 0) Console.Write("I четверть");
+if (x < 0 && y > 0) Console.Write("II четверть");
+if (x < 0 && y < 0) Console.Write("III четверть");
+if (x > 0 && y < 0) Console.Write("IV четверть");
+Console.WriteLine("");

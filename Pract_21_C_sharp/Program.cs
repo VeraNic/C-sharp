@@ -18,7 +18,6 @@ else
     Console.WriteLine("Это не палиндром. ");
 Console.WriteLine("Крайние цифры: " + n / 10000 + " " + n % 10);
 Console.WriteLine(
-    ("Вторые по краям цифры: " + (n / 1000 - (n / 10000) * 10) + " " + ((n % 100) - n % 10) / 10)
-);
+    ("Вторые по краям цифры: " + (n / 1000 - (n / 10000) * 10) + " " + ((n % 100) - n % 10) / 10));
 Console.WriteLine("");
 Console.WriteLine("");

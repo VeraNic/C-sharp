@@ -14,7 +14,7 @@ int digit = 0;
 while (quotient > 0)
 {
     digit = quotient % 10;
-    quotient = quotient / 10;
     sum = sum + digit;
+    quotient = quotient / 10;
 }
 Console.Write("Сумма цифр в числе " + num + " равна " + sum);

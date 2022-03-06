@@ -1,8 +1,6 @@
 ﻿//Определить третью цифру, или сообщить, что ее нет
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("");
-
 int count = 0;
 int i = num;
 while (i > 0)

@@ -9,6 +9,7 @@ num = Math.Abs(num);
 
 string str ="";
 str = Convert.ToString(num);
+Console.WriteLine("Всего цифр в числе: " + str.Length);
 
 if (str.Length < 3)
 {

@@ -10,10 +10,7 @@ while (i > 0)
     i = i / 10;
     count++;
 }
-Console.Write("Количество цифр в числе " + num + " равно " + count);
-
-int power = count - 3;
-int delitel = (int)(Math.Pow(10,power));
+int delitel = (int)(Math.Pow(10,count - 3));
 
 int digit3 = (num / delitel) % 10;
 

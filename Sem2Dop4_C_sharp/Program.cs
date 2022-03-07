@@ -7,7 +7,7 @@ Console.WriteLine("________________________________________________________");
 Console.WriteLine("");
 
 Console.Write("Введите натуральное число, в котором все цифры различны: ");
-int number = Convert.ToInt32(Console.ReadLine());
+long number = Long.Parse(Console.ReadLine());
 Console.WriteLine("");
 
 int digit = number % 10;

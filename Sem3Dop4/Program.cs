@@ -1,4 +1,5 @@
 ﻿Console.Clear();
+Console.WriteLine("Задача 4. Найти в какой четверти лежит точка пересечения из задачи 2 (если вектора пересекаются).");
 Console.WriteLine("Задача 2. Даны 4 точки a, b, c, d. Пересекаются ли вектора AB и CD?");
 Console.WriteLine("________________________________________________________");
 Console.WriteLine("");
@@ -38,7 +39,7 @@ if (kAB == kCD)
         && (Math.Min(yC, yD) <= Math.Max(yA, yB))
     )
     {
-        Console.WriteLine("Отрезки AB и CD пересекаются. ");
+        Console.WriteLine("Отрезки AB и CD частично совпадают. ");
     }
     else
     {
@@ -58,7 +59,17 @@ else
         && (y <= Math.Max(yA, yB))
     )
     {
-        Console.Write("Отрезки AB и CD пересекаются. ");
+        Console.Write("Отрезки AB и CD пересекаются ");
+        if (x > 0 && y > 0) Console.Write("в I четверти. ");
+        if (x < 0 && y > 0) Console.Write("во II четверти. ");
+        if (x < 0 && y < 0) Console.Write("в III четверти. ");
+        if (x > 0 && y < 0) Console.Write("в IV четверти. ");
+        if (x == y && x == 0) Console.Write("в центре системы координат. ");
+        else 
+        {
+            if (x == 0) Console.Write("на оси абсцисс. ");
+            if (y == 0) Console.Write("на оси ординат. ");
+        }
     }
     else
     {

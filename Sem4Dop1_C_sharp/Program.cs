@@ -50,7 +50,7 @@ static void Main(string[] args)
         int x3 = cx * random.Next(d);
         int y3 = cy * random.Next(d);
 
-        Console.Write("Созданы три случайные точки в этой четверти: ");
+        Console.Write("Созданы три случайные точки в выбранной вами четверти: ");
         Console.Write("А1 (" + x1 + "; " + y1 + "), ");
         Console.Write("А2 (" + x2 + "; " + y2 + "), ");
         Console.WriteLine("А3 (" + x3 + "; " + y3 + ").");

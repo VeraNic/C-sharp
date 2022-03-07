@@ -21,9 +21,9 @@
             n = int.Parse(Console.ReadLine());
         }
         Random random = new Random();
-        int nd = random.Next(8); //Случайный выбор номера цифры из списка
-        int ns = random.Next(29); //Случайный выбор номера спецсимвола из списка
-        int nl = random.Next(24); //Случайный выбор номера буквы из списка
+        int nd = random.Next(9); //Случайный выбор номера цифры из списка
+        int ns = random.Next(31); //Случайный выбор номера спецсимвола из списка
+        int nl = random.Next(25); //Случайный выбор номера буквы из списка
 
         string parol =
             capital_letters.Substring(nl, 1) + symbols.Substring(ns, 1) + digits.Substring(nd, 1); //Добавляем в пароль первые обязательные 3 символа: букву, спецсимвол, цифру
@@ -43,11 +43,11 @@
                     nl = random.Next(25); //Случайный выбор номера строчной буквы из списка
                     break;
                 case 3:
-                    ns = random.Next(30); //Случайный выбор номера спецсимвола из списка
+                    ns = random.Next(31); //Случайный выбор номера спецсимвола из списка
                     parol = parol + symbols.Substring(ns, 1);
                     break;
                 case 4:
-                    nd = random.Next(8); //Случайный выбор номера цифры из списка
+                    nd = random.Next(9); //Случайный выбор номера цифры из списка
                     parol = parol + digits.Substring(nd, 1);
                     break;
                 default:

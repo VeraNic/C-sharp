@@ -7,15 +7,15 @@ Console.WriteLine("________________________________________________________");
 Console.WriteLine("");
 
 Console.Write("Введите натуральное число, в котором все цифры различны: ");
-long number = Long.Parse(Console.ReadLine());
+long number = Convert.ToInt64(Console.ReadLine());
 Console.WriteLine("");
 
-int digit = number % 10;
-int maxdigit = number % 10;
-int mindigit = number % 10;
+long digit = number % 10;
+long maxdigit = number % 10;
+long mindigit = number % 10;
 string result = "Максимальная цифра расположена левее, чем минимальная.";
 
-int i = number;
+long i = number;
 while (i > 0)
 {
     digit = i % 10;

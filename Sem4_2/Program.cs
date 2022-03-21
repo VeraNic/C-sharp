@@ -17,4 +17,4 @@ for (int i = 0; i < d; i++)
     sum = sum + digit;
     d = number.Length;
 }
-Console.Write("Сумма цифр в числе " + number + " равна " + sum);
+Console.Write("Сумма цифр в числе " + number + " равна " + sum +  ".");

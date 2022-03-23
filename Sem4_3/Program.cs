@@ -41,5 +41,5 @@ for (int i = 0; i < array.Length; i++)
     Console.Write("|" + number.PadLeft(4, ' ') + " ");
 }
 
-Console.WriteLine("");
+Console.WriteLine(""); Console.WriteLine("|");
 Console.WriteLine("-------------------------------------------------");

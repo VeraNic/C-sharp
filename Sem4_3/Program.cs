@@ -40,6 +40,6 @@ for (int i = 0; i < array.Length; i++)
     string number = Convert.ToString(array[i]);
     Console.Write("|" + number.PadLeft(4, ' ') + " ");
 }
-
-Console.WriteLine(""); Console.WriteLine("|");
+Console.WriteLine("|");
 Console.WriteLine("-------------------------------------------------");
+Console.WriteLine("");

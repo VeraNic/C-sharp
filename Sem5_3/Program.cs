@@ -8,7 +8,7 @@ Console.Write("- Введите количество элементов масс
 int length = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(""); 
 
-Console.Write("Массив вещественных чисел: ");
+Console.Write("Массив вещественных чисел: "); Console.ForegroundColor = ConsoleColor.Yellow;
 Console.Write("[");
 double[] array = new double[length];
 Random rand = new Random(DateTime.Now.Millisecond);
@@ -24,7 +24,9 @@ for (int i = 0; i < array.Length; i++)
     if (max < array[i]) max = array[i];
     if (min > array[i]) min = array[i];
 }
-Console.WriteLine("]"); Console.WriteLine("");
-Console.Write("Разница между максимальным и минимальным элементами массива: " + max + " - ");
+Console.WriteLine("]"); Console.WriteLine(""); Console.ForegroundColor = ConsoleColor.White;
+
+Console.Write("Разница между максимальным и минимальным элементами массива: "); Console.ForegroundColor = ConsoleColor.Green;
+Console.Write(max + " - ");
 if (min < 0) Console.Write("("); Console.Write(min); if (min < 0) Console.Write(")"); 
-Console.Write(" = " + Math.Round((max - min), 2));
+Console.Write(" = " + Math.Round((max - min), 2)); Console.ForegroundColor = ConsoleColor.White;

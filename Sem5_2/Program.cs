@@ -10,7 +10,7 @@ int length = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(""); 
 int sum = 0;
 
-Console.Write("Одномерный массив, заполненный случайными числами: ");
+Console.Write("Одномерный массив, заполненный случайными числами: "); Console.ForegroundColor = ConsoleColor.Yellow;
 Console.Write("[");
 int[] array = new int[length];
 Random rand = new Random();
@@ -21,5 +21,8 @@ for (int i = 0; i < array.Length; i++)
     if (i < length - 1 ) Console.Write("; ");
     if (i % 2 != 0) sum += array[i];
 }
-Console.WriteLine("]"); Console.WriteLine("");
-Console.WriteLine("Cумма элементов, стоящих на нечётных позициях: " + sum);
+Console.WriteLine("]"); Console.WriteLine(""); Console.ForegroundColor = ConsoleColor.White;
+Console.Write("Cумма элементов, стоящих на нечётных позициях: ");
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine(sum);
+Console.ForegroundColor = ConsoleColor.White;

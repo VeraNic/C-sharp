@@ -15,7 +15,6 @@ Console.WriteLine("Размер массива: " + length + "."); Console.Write
 
 Massive(count1, count0);
 
-///////////////////////////////////////////////////////////////////////////
 
 void Massive(int c1, int c0)
 {
@@ -41,3 +40,4 @@ Console.WriteLine("]"); Console.WriteLine(); Console.ForegroundColor = ConsoleCo
 
 Console.ForegroundColor = ConsoleColor.White;
 }
+Console.ReadLine();

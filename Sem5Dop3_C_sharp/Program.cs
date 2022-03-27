@@ -1,5 +1,6 @@
 ﻿Console.Clear();
 Console.WriteLine("________________________________________________________");
+Console.WriteLine("Знакомство с языками программирования. Семинар 4. Дополнительные задачи.");Console.WriteLine();
 Console.WriteLine("Задача 3. Массив на 100 элементов задаётся случайными числами от 1 до 99."); 
 Console.WriteLine("Определите самый часто встречающийся элемент в массиве."); 
 Console.WriteLine("Если таких элементов несколько, вывести их все.");
@@ -60,5 +61,8 @@ for (int i = 0; i < dim; i++)
 Console.ForegroundColor = ConsoleColor.White; Console.WriteLine();
 Console.Write("Cамые часто встречающиеся элементы в массиве: "); 
 Console.ForegroundColor = ConsoleColor.Yellow; Console.WriteLine (moda);
-// Console.ForegroundColor = ConsoleColor.White; Console.Write("Количество повторов: ");
+Console.ForegroundColor = ConsoleColor.White; 
+// Console.Write("Количество повторов: ");
 // Console.ForegroundColor = ConsoleColor.Yellow; Console.Write(max); 
+
+Console.Read();  

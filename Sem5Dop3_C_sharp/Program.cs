@@ -13,10 +13,8 @@ Console.WriteLine(
     "Все числа от 1 до 1000000, сумма цифр которых в три раза меньше их произведений: "
 );
 int result = 0;
-
 Console.ForegroundColor = ConsoleColor.Yellow;
 Console.WriteLine();
-
 for (int i = 1; i < 1000000; i++)
 {
     if (sumdigits(i) * 3 == multdigits(i))

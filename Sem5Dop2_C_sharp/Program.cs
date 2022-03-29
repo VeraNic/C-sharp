@@ -12,18 +12,19 @@ Console.WriteLine(number1 + "; " + number2); Console.ForegroundColor = ConsoleCo
 
 multiplication(number1, number2); Console.ForegroundColor = ConsoleColor.White;
 
-Console.Read();
+Console.WriteLine(); Console.Read();
 
 static string number()
 {
-    int limit = 22; //максимальная длина случайного числа
+    int limit = 9; //максимальная длина случайного числа
     string digits = "0123456789";
     Random rand = new Random();
     int len = rand.Next(1, limit);
-    string n = "";
+    string n = ""; string d;
     for (int i = 0; i < len; i++)
     {
-        string d = digits.Substring(rand.Next(0, 10), 1);
+        if (i == 0) d = digits.Substring(rand.Next(1, 10), 1);
+        else d = digits.Substring(rand.Next(0, 10), 1);
         n = n + d;
     }
     return n;//случайное число длиной от 1 до limit   
@@ -46,10 +47,10 @@ int i = 0;
         int d1 = Convert.ToInt32(n1.Substring(j, 1));
         int d2 = Convert.ToInt32(n2.Substring(k, 1));
         array[i] = d1 * d2; 
-        Console.Write(array[i]); 
-        if (i < (len1-1) * (len2-1)-1) Console.Write("; ");
+        Console.Write(array[i]); if (j < len1 - 1 || k < len2 - 1) Console.Write("; ");
         }
-    }i++;
+    } 
+i++;
 Console.WriteLine("}"); 
 }
 

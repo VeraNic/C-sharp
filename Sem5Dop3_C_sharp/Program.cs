@@ -6,7 +6,7 @@ Console.WriteLine("Подсчитайте их количество. ");
 Console.WriteLine("________________________________________________________"); Console.WriteLine();
 
 count();
-
+////////////////////////// ДОРЕШИВАЮ...
 static void main count()
 {
     int result = 0;

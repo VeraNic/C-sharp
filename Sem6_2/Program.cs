@@ -11,9 +11,8 @@ Console.WriteLine();
 
 Console.WriteLine("Введите коэффициенты уравнений прямых y = k1 * x + b1, y = k2 * x + b2: ");
 getCoefficients(out double k1, out double b1, out double k2, out double b2);
-analysis(k1, b1, k2, b2, out string res); Console.WriteLine();
-Console.ForegroundColor = ConsoleColor.Yellow; Console.WriteLine(res); Console.ForegroundColor = ConsoleColor.White;
-Console.WriteLine(); Console.ReadLine();
+analysis(k1, b1, k2, b2, out string res); Console.WriteLine(); Console.ForegroundColor = ConsoleColor.Yellow; 
+Console.WriteLine(res); Console.ForegroundColor = ConsoleColor.White; Console.WriteLine(); Console.ReadLine();
 
 static void getCoefficients(out double k1, out double b1, out double k2, out double b2)
 {
@@ -38,6 +37,6 @@ static void analysis(double k1, double b1, double k2, double b2, out string resu
         double x = (b2 - b1) / (k1 - k2);
         double y = k1 * x + b1;
         result =
-            "Точка пересечения прямых: (" + Convert.ToDouble(x) + "; " + Convert.ToDouble(y) + ") ";
+            "Точка пересечения прямых: (" + x + "; " + y + ") ";
     }
 }

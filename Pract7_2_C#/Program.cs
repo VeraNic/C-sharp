@@ -11,9 +11,9 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("- количество столбцов" + "\t" + "n = ");
 int n = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(CheckAdress(m, n, FillArray(m, n)));
-Console.ForegroundColor = ConsoleColor.White;
-Console.Write(""); Console.ReadLine();
+Console.WriteLine(CheckAdress(m, n, FillArray(m, n))); 
+
+Console.ForegroundColor = ConsoleColor.White; Console.Write(""); Console.ReadLine();
 
 static double[,] FillArray(int m, int n)
 {

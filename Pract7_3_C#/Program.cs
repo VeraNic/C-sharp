@@ -23,7 +23,7 @@ static int[,] FillArray(int m, int n)
         for (int j = 0; j < n; j++)
         {
             arr[i, j] = random.Next(-99, 100);
-            Console.Write("{0, 10}", arr[i, j] + " ");
+            Console.Write("{0, 10}", arr[i, j]);
         }
         Console.WriteLine();Console.WriteLine();
     }

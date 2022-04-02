@@ -1,0 +1,43 @@
+/* Задача 49.*/
+Random rnd = new Random();
+int cols = 4, rows = 3, sign_min = 0, sign_max = 10;
+double[,] arr = new double[cols,rows];
+FillArr(); 
+PrintArr();
+MatArr();
+PrintArr();
+
+void MatArr()
+{
+    for (int i=0; i < cols; i++)
+    {
+        for (int j=0; j < rows; j++)
+        {
+            if (i%2 == 0 && j%2 ==0) arr[i,j] *= arr[i,j];
+        }
+    }Console.WriteLine("+= Решение задачи =+");
+}
+
+void FillArr()
+{
+    Console.WriteLine("+= Заполняем массив =+");
+    for (int i=0; i < cols; i++)
+    {
+        for (int j=0; j < rows; j++)
+        {
+            arr[i,j] = rnd.Next(sign_min, sign_max);
+        }
+    }
+}
+void PrintArr()
+{
+    Console.WriteLine("+= Вывод в консоль массива =+");
+    for (int i=0; i < cols; i++)
+    {
+        for (int j=0; j < rows; j++)
+        {
+            Console.Write(arr[i,j] + "\t");
+        }
+        Console.WriteLine(" ");
+    }
+}

@@ -8,10 +8,10 @@ Console.WriteLine("________________________________________________________");
 int x = 3;
 int y = 4;
 
-Random random = new Random();  // Задание параметров матриц случайным образом:
-int m = random.Next(x, y + 1); // число строк матрицы 1
-int l = random.Next(x, y + 1); // число столбцов матрицы 1 = число строк матрицы 2
-int n = random.Next(x, y + 1); // число столбцов матрицы 2
+Random random = new Random();  // Задание размеров матриц случайным образом:
+int m = random.Next(x, y + 1); // число строк матрицы 1,
+int l = random.Next(x, y + 1); // число столбцов матрицы 1 = число строк матрицы 2,
+int n = random.Next(x, y + 1); // число столбцов матрицы 2.
 
 int[,] A = FillArray(m, l);
 int[,] B = FillArray(l, n);

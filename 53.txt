@@ -1,0 +1,49 @@
+// Задача 53
+Random rnd = new Random();
+int cols = rnd.Next(2,10);
+int rows = rnd.Next(2,10);
+int[,] array = new int[rows,cols];
+FillArr();
+PrintArr();
+MathArr();
+PrintArr();
+
+void MathArr()
+{    
+    int temp = 0;
+
+    for (int j=0; j < cols; j++)
+        {
+            temp = array[0,j];
+            array[0,j] = array[rows-1,j];
+            array[rows-1,j] = temp;
+        }
+    
+}
+
+
+
+void FillArr()
+{
+    Console.WriteLine("+= Заполняем массив =+");
+    for (int i=0; i < rows; i++)
+    {
+        for (int j=0; j < cols; j++)
+        {
+            array[i,j] = rnd.Next(20);
+        }
+    }
+}
+void PrintArr()
+{
+    Console.WriteLine("+= Вывод в консоль массива =+");
+    for (int i=0; i < rows; i++)
+    {
+        for (int j=0; j < cols; j++)
+        {
+            Console.Write(array[i,j] + "\t");
+        }
+        Console.WriteLine(" ");
+    }
+    Console.WriteLine(" ");
+}

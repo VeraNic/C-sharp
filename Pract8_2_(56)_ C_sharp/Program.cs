@@ -15,7 +15,7 @@ FillArray2(array);
 int numberRoW = RowArray2(array, out numberRoW); 
 
 PrintArray2(array); Console.WriteLine(new string('_', 10 * columns)); Console.WriteLine();
-Console.WriteLine("The row with the smallest sum: \n"); Console.ForegroundColor = ConsoleColor.Green; Console.ResetColor();
+Console.WriteLine("The row " + numberRoW + "has the smallest sum: \n"); Console.ForegroundColor = ConsoleColor.Green; Console.ResetColor();
 Console.ForegroundColor = ConsoleColor.Green;
 PrintRowArray2(array, numberRoW); Console.ResetColor();
 Console.ReadKey();

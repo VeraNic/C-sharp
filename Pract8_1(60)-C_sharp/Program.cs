@@ -10,12 +10,11 @@ rows = columns = layers = int.MaxValue;
 Random rnd = new Random();
 while (rows * columns * layers > 90)         // подбор случайного количества строк, столбцов, слоёв 
 {                                            // трёхмерного массива, для которого возможно решение задачи
-rows = rnd.Next(2, 10);                      // с учётотм количества двузначных чисел от 10 до 99 - 90
-columns = rnd.Next(2, 10);
-layers = rnd.Next(2, 10);
+rows = rnd.Next(2, 23);                      // с учётом количества всех двузначных чисел от 10 до 99 (90);
+columns = rnd.Next(2, 23);                   // при минимальных значениях (2) первых двух параметров третий - менее 23
+layers = rnd.Next(2, 23);
 }
 Console.WriteLine($"Random parameters of the array: layers = {layers}, rows = {rows}, columns = {columns}\n");
-
 
 int[] elements = new int[90];
 int[,,] array = new int[layers, rows, columns];
@@ -58,7 +57,7 @@ void PrintArray3(int[,,] matrix)
         {
             for (int j = 0; j < matrix.GetLength(2); j++)
             {
-                Console.ForegroundColor = ConsoleColor.Green; Console.Write($"\t{matrix[k, i, j]}"); Console.ResetColor(); 
+                Console.ForegroundColor = ConsoleColor.Green; Console.Write($"{matrix[k, i, j]}"); Console.ResetColor(); 
                 Console.Write($" ({k}, {i}, {j})");
                 if (k == matrix.GetLength(0) -1 && i == matrix.GetLength(1) - 1 && j == matrix.GetLength(2) - 1) Console.Write("}");
                 else Console.Write("; ");

@@ -1,41 +1,70 @@
 ﻿Console.Clear();
-Console.WriteLine("________________________________________________________\n" + "Знакомство с языками программирования. Семинар 8. \n" + 
-"\nЗадача 60:  Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая построчно выведет элементы и их индексы. \n" + "________________________________________________________\n");
+Console.WriteLine(
+    "________________________________________________________\n"
+        + "Знакомство с языками программирования. Семинар 8. \n"
+        + "\nЗадача 60:  Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая построчно выведет элементы и их индексы. \n"
+        + "________________________________________________________\n");
 
-PrintArray3(FillArray3());
-
-static int [,,] FillArray3()
-{
+int rows, columns, layers;
+rows = columns = layers = int.MaxValue; 
 Random rnd = new Random();
-int rows = rnd.Next(2, 10); int columns = rnd.Next(2, 10); int layers = rnd.Next(2, 10);
-Console.WriteLine($"layers = {layers}, rows = {rows}, columns = {columns}\n");
-
-int[,,] array = new int[columns, rows, layers];
-    for (int k = 0; k < layers; k++)
-    {
-        for (int i = 0; i < rows; i++)
-        {
-            for (int j = 0; j < columns; j++)
-            {
-                array[k, i, j] = rnd.Next(10, 100);
-            }
-        }
-    }
-    return array;
+while (rows * columns * layers > 90)         // подбор случайного количества строк, столбцов, слоёв 
+{                                            // трёхмерного массива, для которого возможно решение задачи
+rows = rnd.Next(2, 10);                      // с учётотм количества двузначных чисел от 10 до 99 - 90
+columns = rnd.Next(2, 10);
+layers = rnd.Next(2, 10);
 }
+Console.WriteLine($"Random parameters of the array: layers = {layers}, rows = {rows}, columns = {columns}\n");
 
-void PrintArray3(int[,,] array)
+
+int[] elements = new int[90];
+int[,,] array = new int[layers, rows, columns];
+
+FillArray1(elements);
+FillArray3(array, elements);
+PrintArray3(array);
+Console.ReadKey(); 
+
+void FillArray1(int[] matrix)
 {
-    for (int k = 0; k < array.GetLength(2); k++)
-    {
-        for (int i = 0; i < array.GetLength(0); i++)
-        {
-           for (int j = 0; j < array.GetLength(1); j++)
-        { 
-            Console.Write($"{array[k, i, j]} ({k}, {i}, {k})\t");
-        } 
-        Console.WriteLine(" ");
-    }
-    Console.WriteLine("\n");
+    for (int i = 0; i < matrix.GetLength(0); i++)
+        matrix[i] = 10 + i;
 }
+
+void FillArray3(int[,,] matrix3, int[] matrix1)
+{   int count = 0; int number;
+    for (int k = 0; k < matrix3.GetLength(0); k++)
+        for (int i = 0; i < matrix3.GetLength(1); i++)
+            for (int j = 0; j < matrix3.GetLength(2); j++)
+            {
+                number = rnd.Next(0, 90); //случайный номер элемента массива двузначных чисел
+                while (matrix1[number] == 0)
+                {
+                    number = count;
+                    count++;
+                }
+                matrix3[k, i, j] = matrix1[number];
+                matrix1[number] = 0;
+                count = 0;
+            }
+    
+}
+
+void PrintArray3(int[,,] matrix)
+{Console.Write("{");
+    for (int k = 0; k < matrix.GetLength(0); k++)
+    {
+        for (int i = 0; i < matrix.GetLength(1); i++)
+        {
+            for (int j = 0; j < matrix.GetLength(2); j++)
+            {
+                Console.ForegroundColor = ConsoleColor.Green; Console.Write($"\t{matrix[k, i, j]}"); Console.ResetColor(); 
+                Console.Write($" ({k}, {i}, {j})");
+                if (k == matrix.GetLength(0) -1 && i == matrix.GetLength(1) - 1 && j == matrix.GetLength(2) - 1) Console.Write("}");
+                else Console.Write("; ");
+            }
+            Console.WriteLine();
+        }
+        Console.WriteLine();
+    }
 }

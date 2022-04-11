@@ -21,8 +21,8 @@ int[,]array = new int[n,n];
 int row = 0; int column = 0; // строка и столбец текущего элемента массива
 while (column < n)
 {
-    if (column % 2 == 0) for (row = 0; row < n; row++) array[row, column] = number++; // чётная вертикаль витка спирали, сверху вниз
-    else for (row = n - 1; row >= 0; row--) array[row, column] = number++; // нечётная вертикаль витка спирали, снизу вверх 
+    if (column % 2 == 0) for (row = 0; row < n; row++) array[row, column] = number++; // чётная вертикаль, сверху вниз
+    else for (row = n - 1; row >= 0; row--) array[row, column] = number++; // нечётная вертикаль, снизу вверх 
 column++;
 }
 return array;

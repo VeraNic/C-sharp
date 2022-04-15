@@ -14,11 +14,13 @@ void AllDivisors(int i, int divisor = 1)
     divisor++;
     if (i % divisor == 0)
     {
+        Console.ForegroundColor = ConsoleColor.Green;
         Console.Write(divisor);
         if (divisor < i)
             Console.Write(", ");
         else
             Console.Write(". ");
+        Console.ResetColor();
 
         i /= divisor;
         divisor = 1;

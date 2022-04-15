@@ -24,7 +24,7 @@ void textTask()
     Console.ForegroundColor = ConsoleColor.DarkYellow;
     Console.WriteLine(new string('_', Console.WindowWidth));
     Console.WriteLine(
-        "Знакомство с языками программирования. Семинар 10.\n"
+        "Знакомство с языками программирования. Урок 10. Практическое задание\n"
             + "\n1. Дано число n. Получите число, записанное в обратном порядке.\n"
             + "345 >> 543\n" + "81 >> 18"
     );

@@ -1,13 +1,15 @@
-﻿multipleVerification();
+﻿multipleTesting();
 
-void multipleVerification()
+void multipleTesting()
 {
     textTask();
     Console.Write("Введите номер года: ");
     int year = Int32.Parse(Console.ReadLine());
+    Console.ForegroundColor = ConsoleColor.Green;
     CheckYear(year);
+    Console.ResetColor();
     Console.ReadKey(); 
-    multipleVerification();
+    multipleTesting();
 }
 
 void CheckYear(int y, string result = "не является високосным")

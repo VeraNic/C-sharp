@@ -3,6 +3,7 @@
 textTask();
 Console.Write(n + " >> ");
 AllDivisors(n);
+
 Console.WriteLine("\n");
 Console.ReadKey();
 
